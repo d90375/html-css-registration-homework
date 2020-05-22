@@ -89,6 +89,17 @@ a {
   margin-right: 41px;
 }
 
+.nav__item {
+  transition-property: background-color, color;
+  transition-duration: 400ms;
+  @content;
+}
+
+.nav__item:hover {
+  color: rgb(153, 146, 139);
+  cursor: pointer;
+}
+
 .input {
   color: #ffffff;
   font-size: 17px;
@@ -185,6 +196,10 @@ a {
   color: #ffffff;
   font-size: 14px;
   cursor: pointer;
+}
+
+.checkbox label:hover {
+  color: rgb(153, 146, 139);
 }
 
 .btn__wrap {
