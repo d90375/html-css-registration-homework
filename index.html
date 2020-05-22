@@ -12,7 +12,11 @@
     <meta name="KeyWords" content="EPAM,Brest,form,mount,black" />
     <meta name="Description" content="Basic form SPA" />
     <title>Form</title>
-    <link rel="shortcut icon" href="/assets/img/icons8-edit-64.png" type="image/png">
+    <link
+      rel="shortcut icon"
+      href="/assets/img/icons8-edit-64.png"
+      type="image/png"
+    />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/desktop.css" />
@@ -33,21 +37,25 @@
                 <div class="input__email">
                   <label for="email"></label>
                   <input
+                    required
                     onfocus="this.value=''"
                     type="email"
                     id="email"
                     name="email"
                     value="Email"
+                    placeholder="Please enter email"
                   />
                 </div>
                 <div class="input__password">
                   <label for="password"></label>
                   <input
+                    required
                     onfocus="this.value=''"
-                    type="text"
+                    type="password"
                     id="password"
                     name="password"
                     value="Password"
+                    placeholder="Please enter password"
                   />
                 </div>
               </div>
@@ -86,31 +94,39 @@
                 <div class="input__tel">
                   <label for="tel"></label>
                   <input
+                    required
                     onfocus="this.value=''"
                     type="tel"
                     id="tel"
                     name="tel"
                     value="Mobile Phone"
+                    placeholder="Please enter phone"
+                    pattern="(\+?\d[- .]*){7,13}"
                   />
                 </div>
                 <div class="input__email">
                   <label for="emailID"></label>
                   <input
+                    required
                     onfocus="this.value=''"
                     type="email"
                     id="emailID"
                     name="email"
                     value="Email ID"
+                    placeholder="Please enter email"
                   />
                 </div>
                 <div class="input__password">
                   <label for="passwordID"></label>
                   <input
+                    required
                     onfocus="this.value=''"
-                    type="text"
+                    type="password"
                     id="passwordID"
                     name="password"
                     value="Password"
+                    placeholder="Please enter password"
+                    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
                   />
                 </div>
               </div>
