@@ -1,0 +1,37 @@
+@media (max-width: 769px) {
+  .form__container {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 475px) {
+  .form__container {
+    width: 400px;
+  }
+}
+
+@media (max-width: 426px) {
+  .form__container {
+    width: 320px;
+    height: 470px;
+  }
+  .form__wrap {
+    padding-left: 3%;
+    padding-top: 5%;
+    width: auto;
+  }
+  .nav {
+    padding-left: 5%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 376px) {
+  .form__wrap {
+    padding-left: 0;
+    align-items: center;
+  }
+  .nav {
+    padding-left: 0;
+  }
+}
