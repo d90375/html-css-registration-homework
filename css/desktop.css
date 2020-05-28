@@ -45,6 +45,12 @@
   width: 100%;
 }
 
+/* styled placeholder */
+
+.form__wrap form div > input::placeholder {
+  color: #ffffff;
+}
+
 .content-2__wrap,
 .content-1__wrap {
   display: flex;
