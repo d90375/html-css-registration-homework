@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Content-language" content="de" />
+    <meta name="author" content="d90375" />
+    <meta name="KeyWords" content="EPAM,Brest,form,mount,black" />
+    <meta name="Description" content="Basic form SPA" />
+    <title>Form</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/img/icons8-edit-64.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+  </head>
+  <body class="main-background">
+    <div class="wrap">
+      <div class="form__container">
+        <div class="form__wrap">
+          <!-- SIGN IN PAGE. -->
+          <div id="content-1">
+            <form
+              class="content-1__wrap"
+              method="post"
+              action="https://reqres.in/api/login"
+            >
+              <div class="input">
+                <div class="input__email">
+                  <label for="email"></label>
+                  <input
+                    required
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="input__password">
+                  <label for="password"></label>
+                  <input
+                    required
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Password"
+                  />
+                </div>
+              </div>
+              <div class="checkbox">
+                <label for="i_agree"
+                  >I agree to terms and conditions
+                  <input   required type="checkbox" id="i_agree" checked />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="btn__wrap--login">
+                <label>
+                  <input class="btn" type="submit" value="LOGIN" />
+                </label>
+              </div>
+              <div class="password-recovery__wrap">
+                <label>
+                  <input
+                    class="password-recovery"
+                    type="text"
+                    value="Forgot password?"
+                  />
+                </label>
+              </div>
+            </form>
+          </div>
+
+          <!-- SIGN UP PAGE. -->
+          <div id="content-2">
+            <form
+              class="content-2__wrap"
+              method="post"
+              action="https://reqres.in/api/register"
+            >
+              <div class="input">
+                <div class="input__tel">
+                  <label for="tel"></label>
+                  <input
+                    required
+                    type="tel"
+                    id="tel"
+                    name="tel"
+                    placeholder="Mobile Phone"
+                    pattern="(\+?\d[- .]*){7,13}"
+                  />
+                </div>
+                <div class="input__email">
+                  <label for="emailID"></label>
+                  <input
+                    required
+                    type="email"
+                    id="emailID"
+                    name="email"
+                    placeholder="Email ID"
+                  />
+                </div>
+                <div class="input__password">
+                  <label for="passwordID"></label>
+                  <input
+                    required
+                    type="password"
+                    id="passwordID"
+                    name="password"
+                    placeholder="Password"
+                    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"
+                  />
+                </div>
+              </div>
+              <div class="checkbox">
+                <label for="i_agreeID"
+                  >I agree to terms and conditions
+                  <input   required type="checkbox" id="i_agreeID" checked />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <div class="btn__wrap">
+                <input class="btn" type="submit" value="REGISTER" />
+              </div>
+            </form>
+          </div>
+
+          <!-- NAV HEADER -->
+          <div class="nav">
+            <a class="nav__item nav__in" href="#content-1">SIGN IN</a>
+            <a class="nav__item nav__up" href="#content-2">SIGN UP</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
